@@ -1,4 +1,4 @@
-package io.spring.guides.gs_producing_web_service;
+package pl.blaszak.demowebservice;
 
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.ApplicationContext;
@@ -28,7 +28,7 @@ public class WebServiceConfig {
         DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
         wsdl11Definition.setPortTypeName("CountriesPort");
         wsdl11Definition.setLocationUri("/ws");
-        wsdl11Definition.setTargetNamespace("http://spring.io/guides/gs-producing-web-service");
+        wsdl11Definition.setTargetNamespace("pl.blaszak.demowebservice.domain");
         wsdl11Definition.setSchema(countriesSchema);
         return wsdl11Definition;
     }

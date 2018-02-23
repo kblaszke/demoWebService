@@ -1,7 +1,9 @@
-package io.spring.guides.gs_producing_web_service;
+package pl.blaszak.demowebservice;
 
 import org.springframework.stereotype.Component;
 import org.springframework.util.Assert;
+import pl.blaszak.demowebservice.domain.Country;
+import pl.blaszak.demowebservice.domain.Currency;
 
 import javax.annotation.PostConstruct;
 import java.util.HashMap;
